@@ -1,7 +1,8 @@
 tags: 
   - angular
-  - directives
-  - introduction
+  - filters
+  - dataset
+  - ngRepeat
 languages:
   - javascript
 frameworks:
