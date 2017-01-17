@@ -18,7 +18,7 @@ describe('Filters Test', function() {
 		var todoList = element.all(by.repeater('contact in ctrl.contacts'));
 		var item = todoList.get(0).element(by.css('td:nth-child(6)'));
 
-		expect(item.getInnerHtml()).toBe('Tuesday, January 13, 1970');
+		expect(browser.executeScript("return arguments[0].innerHTML;", item)).toBe('Tuesday, January 13, 1970');
 	});
 
 
